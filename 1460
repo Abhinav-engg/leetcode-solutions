@@ -1,0 +1,9 @@
+# Problem no. 1460
+
+class Solution:
+    def runningSum(self, nums: List[int]) -> List[int]:
+        result = []
+        for i in range(0, len(nums)):
+            toBeAppended = sum(nums[0:i+1])
+            result.append(toBeAppended)
+        return result    
